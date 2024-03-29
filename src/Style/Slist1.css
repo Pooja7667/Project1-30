@@ -1,0 +1,44 @@
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+ padding: 20px;
+ background-color: rgb(162, 166, 193);
+
+}
+
+.container2{
+  background-color: rgb(117, 5, 74);
+  height:60vh;
+  width:60vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap:1px;
+
+}
+
+ img{
+  height:10vh;
+  border-radius:50%;
+  
+}
+
+.small-Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+
+.button{
+  background-color: rgb(165, 42, 153);
+  padding: 3px;
+  height: 6ex;
+  width: 20ex;
+}
+

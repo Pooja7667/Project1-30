@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Slist1 from './Component/Slist1';
+import { useState } from 'react';
+import studentData from "./Data/Data1";
+import "./Style/App.css"
 
-function App() {
+const App = () => {
+  const [students, setStudent] = useState(studentData);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='box'>
+        <div className="app">
+          <h1>STUDENT :{students.length}</h1>
+          <Slist1 students={students} />
+          <button onClick={() => setStudent([])} className="button">
+            Clear all
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
 
-export default App;
+export default App
